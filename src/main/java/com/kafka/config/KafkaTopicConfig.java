@@ -16,4 +16,13 @@ public class KafkaTopicConfig {
                 .replicas(1)
                 .build();
     }
+    
+    @Bean
+    public NewTopic softwareDevelopmentTopic1() {
+        return TopicBuilder
+                .name("alert-message-json")
+                .partitions(1)
+                .replicas(1)
+                .build();
+    }
 }
